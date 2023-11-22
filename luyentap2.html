@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 2</title>
+</head>
+<body>
+<script>
+
+    // Bài 1:
+    // function square(x){
+    //     return x*x;
+    // }
+
+    // Bài 2:
+    // function calculationDiameterCircle(x){
+    //     let diameter = (3.14 * 2 * x);
+    //     return diameter;
+    // }
+    // function calculationAcreageCircle(x){
+    //     let acr = (x * x * 3.14);
+    //     return acr;
+    // }
+    // let x = +prompt("Nhập vào bán kính");
+    // document.write(calculationDiameterCircle(x) + "<br>");
+    // document.write(calculationAcreageCircle(x));
+
+    // Bài 3:
+    // function calculationFactorial(x){
+    //     let result = 1;
+    //     for (let i = 1; i <= x ; i++) {
+    //         result = result * i;
+    //     }
+    //     return  result;
+    // }
+    // let x = prompt("Nhập số bất kì");
+    // document.write(calculationFactorial(x));
+
+
+    // Bài 4:
+    // function isNumber(x){
+    //     if (x * 1 == x){
+    //         return true;
+    //     }else {
+    //         return false;
+    //     }
+    // }
+    // let x = prompt("nhập số bất kì");
+    // console.log(isNumber(x));
+
+    // Bài 5:
+    // function min(a, b, c){
+    //     let min = a;
+    //     if (min < b){
+    //
+    //     }else {
+    //         min = b;
+    //     }
+    //     if (min < c){
+    //         return min;
+    //     } else{
+    //         min = c;
+    //         return min;
+    //     }
+    // }
+    // let a = +prompt("Nhập a");
+    // let b = +prompt("Nhập b");
+    // let c = +prompt("Nhập c");
+    // console.log(min(a, b, c));
+
+    // Bài 6:
+    function isPositiveIntegers(x){
+        return x > 0;
+    }
+
+    // Bài 7:
+    function swap(a, b){
+        let arr = [a, b];
+        let temp = a;
+        arr[0] = b;
+        arr[1] = temp;
+        return arr;
+    }
+
+    // Bài 8:
+    function reverse1(arr, x){
+        arr.push(x);
+        let temp;
+        let i = 0;
+        let j = arr.length - 1;
+        while (i < j){
+            {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+                i++;
+                j--;
+            }
+        }
+        return arr;
+    }
+
+    // Bài 9:
+    function checkCharacter(arr, x){
+        let count = 0
+        for (const i in arr) {
+            if (arr[i] == x){
+                count++;
+            }
+        }
+        if (count > 0){
+            console.log(count)
+        }else {
+            console.log(-1)
+        }
+    }
+</script>
+
+</body>
+</html>

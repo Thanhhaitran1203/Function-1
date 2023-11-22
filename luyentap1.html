@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 1</title>
+</head>
+<body>
+<p onclick="alertMessage()">Click</p>
+<input type="text" name="" id=""> <br>
+<label for="number">Số </label><input type="number" name="" id="number">
+<button onclick="plusNumber()">Tăng Tăng</button>
+<script>
+    // Bài 1:
+    // function alertMessage(){
+    //     alert("Xin chào");
+    // }
+
+    // Bài 2:
+    function plus1(x){
+        return x+1;
+    }
+    function plusNumber(){
+        let x = +document.getElementById("number").value;
+        let result = plus1(x);
+        document.getElementById("number").value =  result;
+    }
+
+
+    // Bài 3:
+    function sum(a, b){
+        let result = "";
+        if(a > b){
+            result = "Số thứ nhất lớn hơn số thứ hai";
+        }else {
+            result = a + b;
+        }
+        return result;
+    }
+    let a = +prompt("Nhập số thứ nhất");
+    let b = +prompt("Nhập số thứ hai");
+    console.log(sum(a, b));
+
+    // Bài 4:
+    // function addNumbers() {
+    //     firstNum = 4;
+    //     secondNum = 8;
+    //     result = firstNum + secondNum;
+    //     return result;
+    // }
+    // result = 0;
+    // alert("result sau khi gọi hàm là:" + result);
+    // result = addNumbers();
+    // alert("result sau khi gọi hàm là:" + result);
+
+    // Bài 5:
+    // let star1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    // let star2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+    //
+    // function check_star(star) {
+    //     let index = 0;
+    //     let result = "";
+    //     for (let i = 0; i < star1.length; i++) {
+    //         if (star == star1[i]) {
+    //             index = i;
+    //             result = star2[index];
+    //             return result;
+    //         }else {
+    //             result = "Không tìm thấy sao";
+    //             return result;
+    //         }
+    //     }
+    // }
+    // let star = prompt("Nhập vào tên ngôi sao: ")
+    // document.write(check_star(star));
+</script>
+</body>
+</html>

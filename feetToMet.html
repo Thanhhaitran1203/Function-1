@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feet To Met</title>
+</head>
+<body>
+<input type="text" id="form">
+<select name="" id="unit1">
+    <option value="1">Meter</option>
+    <option value="3.279">Feet</option>
+</select>
+<select name="" id="unit2">
+    <option value="1" name="Meter">Meter</option>
+    <option value="3.279" name="Feet">Feet</option>
+</select>
+<input type="text" id="to">
+<button onclick="convert()">Convert</button>
+<script>
+function convert() {
+    let form = document.getElementById("form").value;
+    let unit1 = document.getElementById("unit1").value;
+    let unit2 = document.getElementById("unit2").value;
+    let ratio = unit1 / unit2;
+    let result = form * ratio;
+    if(unit1 == unit2){
+        document.getElementById("to").value = form;
+    }
+    if(unit1 == 1 && unit2 == 3.279){
+        document.getElementById("to").value = result.toFixed(3);
+    }
+    if(unit1 == 3.279 && unit2 == 1){
+        document.getElementById("to").value = result.toFixed(3) ;
+    }
+}
+</script>
+</body>
+</html>
